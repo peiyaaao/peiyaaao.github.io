@@ -4,24 +4,57 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link href="./css/styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto+Mono" rel="stylesheet">
+        <script src="./js/scripts.js""></script>
         <title>Peiyao Chen</title>
     </head>
     
     <body>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <h1>Hi there, I'm Peiyao</h1>
+            <div class="row navbar justify-content-left">
+                <div class="col-md-8">
+                    <span>
+                        <a href="#"><img src="./img/github.png"></a>
+                        <a href="https://www.linkedin.com/in/peiyaochen"><img src="./img/linkedin.png"></a>
+                        <a href="#"><img src="./img/mail.png"></a>
+                        <a href="#">Resume</a>
+                    </span>
                 </div>
-                <div class="col-md-12">
-
-                </div>
+            </div>
+            <div class="row justify-content-center header">
                 <div class="col-md-6">
+                    <h1 id="header-text">Hi, I'm Peiyao</h1>
+                    <br>
+                    <h2>/pay - yow/</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center container-slideshow">
+                <div class="col-md-12">
+                        <div class="slide" id="about">
+                            <h1>About</h1>
+                            <p>details</p>
+                        </div>
 
+                        <div class="slide" id="skills">
+                            <h1>Skills</h1>
+                        </div>
+
+                        <div class="slide" id="projects">
+                            <h1>Projects</h1>
+                        </div>
+
+                        <div class="slide" id="work">
+                            <h1>Workp</h1>
+                        </div>
+                </div>
+            </div>
+            <div class="row justify-content-center footer">
+                <div class="col-md-4">
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
                 </div>
             </div>
         </div>
     </body>
-
-
 </html>
