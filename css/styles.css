@@ -16,7 +16,6 @@ html, body, .container-fluid {
 	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
 	color: black;
-
 }
 
 .header {
@@ -43,4 +42,8 @@ html, body, .container-fluid {
 	height: 50%;
 	background-color: #A0DECB;
 	background-color
+}
+
+.prev, .next {
+	font-size: 60px;
 }
