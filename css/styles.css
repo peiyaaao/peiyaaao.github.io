@@ -1,49 +1,90 @@
-html, body, .container-fluid {
-	height: 100%;
+.icon-bar {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
 }
 
-.navbar img {
-	width: 3%;
+.icon-bar img {
+	max-width: 36px;
+	max-height: 36px;
+	width: auto;
 	height: auto;
-	margin-right:8%;
-	vertical-align: text-bottom;
 }
 
-.navbar a {
-	display: inline;
-	vertical-align: text-bottom;
-	font-size: 18px;
-	font-family: 'Open Sans', sans-serif;
+.icon-bar a {
+	display: inline-flex;
+	justify-content: center;
+	vertical-align: baseline;
 	text-decoration: none;
-	color: black;
+}
+
+.icon-bar a:hover {
+	opacity: 0.5;
+}
+.jumbotron {
+	background-color: transparent;
+	height: 100vh;
+	margin: 0 0 0 0;
+}
+
+.landing {
+	padding: 0 0 0 0;
+	background-attachment: fixed;
+	background-image: url("../img/landing.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing-overlay {
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .header {
-	height: 30%;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .header h1 {
-	position: relative;
-	top: 30%;
 	text-align: center;
-	font-size: 36px;
-	font-family: 'Roboto Mono', monospace;
+	font-size: 54px;
+	font-family: 'Playfair Display', monospace;
+	margin-bottom: 4%;
 }
 
 .header h2 {
-	top: 25%;
-	position: relative;
 	text-align: center;
-	font-size: 24px;
+	font-size: 36px;
 	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 4%;
 }
 
-.container-slideshow {
-	height: 50%;
-	background-color: #A0DECB;
-	background-color
+.about-me {
+	background-color: rgb(255, 188, 97, 0.8);
 }
 
-.prev, .next {
-	font-size: 60px;
+.intro {
+	background-color: transparent;
+}
+
+.projects {
+	background-color: rgb(255, 188, 97, 0.8);
+	border-radius: 10%;
+}
+
+.work {
+	border-radius: 10%;
+	display: flex;
+	align-self: center;
+}
+
+.intro img {
+	border-radius: 50%;
+	width: 100%;
+	height: auto;
+	border: 20px #ffffff solid;
 }

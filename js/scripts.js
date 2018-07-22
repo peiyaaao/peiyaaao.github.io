@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
 
 // Title text type write
- window.addEventListener("load", function(event) {
- 	const titleText =  "Hi I'm Peiyao";
+ document.addEventListener("DOMContentLoaded", function(event) {
+ 	const titleText =  "Hi, I'm Peiyao";
  	const subTitleText = "/pay - yow/";
  	const title = document.getElementById("header-title");
  	const subTitle = document.getElementById("header-subtitle");
