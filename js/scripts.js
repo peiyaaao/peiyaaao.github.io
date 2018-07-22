@@ -1,22 +1,3 @@
-var showSlide = function (index = 0) {
-	const slides = document.getElementsByClassName("slide");
-	for(var i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-	}
-
-	slides[index].style.display = "block";
-};
-
-var changeSlide = function (direction) {
-	const slides = Array.from(document.getElementsByClassName("slide"));
-	const currIndex = slides.findIndex(element => element.style.display == "block");
-	const nextIndex = currIndex + direction;
-
-	if (nextIndex < slides.length && nextIndex >= 0) {
-		showSlide(nextIndex);
-	}
-};
-
 var typeWrite = function(text, element, speed) {
 	const letter = text.charAt(0);
 	element.innerHTML += letter	
@@ -29,16 +10,52 @@ var typeWrite = function(text, element, speed) {
 	}
 };
 
-document.addEventListener('DOMContentLoaded', function() {
-    showSlide();
-}, false);
+var randomColour = function(colours) {
+	var index = Math.floor((Math.random() * colours.length)); 
+	return colours[index];
+}
 
-// Title text type write
- document.addEventListener("DOMContentLoaded", function(event) {
+var growCircle = function(finalSize, currentSize, colours, element) {
+	currentSize += 1;
+	element.style.backgroundColor = randomColour(colours)
+	element.style.height = currentSize + "vh";
+	element.style.width =  currentSize + "vh";
+	if(currentSize == finalSize ) {
+		launchScreen()
+		return
+	} else {
+		setTimeout(() => {
+			growCircle(finalSize, currentSize, colours, element);
+		}, 25);
+	}
+} 
+
+var typeHeader = function() {
  	const titleText =  "Hi, I'm Peiyao";
  	const subTitleText = "/pay - yow/";
  	const title = document.getElementById("header-title");
  	const subTitle = document.getElementById("header-subtitle");
- 	typeWrite(titleText, title, 90);
+ 	typeWrite(titleText, title, 100);
  	typeWrite(subTitleText, subTitle, 150);
- });
+};
+
+var launchScreen = function() {
+	var preloadScreen = document.getElementById("preload");
+	if (preloadScreen.style.display != "none") {
+		preloadScreen.style.display = "none";
+		document.getElementById("postload").style.display = "block";
+		typeHeader()
+	}
+};
+
+var loadingAnimation = function() {
+	var circle = document.getElementById("loader");
+	var colours = ["#ffaa77", "#ef9689", "#df97a0", "#cfa2b3", "#bfaab7"];
+	growCircle(40, 0, colours, circle);
+};
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
+ document.addEventListener("DOMContentLoaded", loadingAnimation);

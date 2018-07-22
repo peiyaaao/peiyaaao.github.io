@@ -5,12 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link href="./css/styles.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto+Slab" rel="stylesheet">
         <script src="./js/scripts.js""></script>
         <title>Peiyao Chen</title>
     </head>
     
     <body>
+        <div class="jumbotron" id="preload">
+            <div id="loader">
+            </div>
+        </div>
         <div class="jumbotron landing">
             <div class="landing-overlay">
                 <div class="container header">
@@ -20,10 +24,10 @@
                     <div class="row justify-content-center">
                         <div class="col-sm-12 col-md-4">
                             <div class="icon-bar">
-                                <a href="#"><img src="./img/github.png"></a>
+                                <a href="https://github.com/peiyaaao"><img src="./img/github.png"></a>
                                 <a href="https://www.linkedin.com/in/peiyaochen"><img src="./img/linkedin.png"></a>
                                 <a href="mailto:peiyao.chen@uwaterloo.ca"><img src="./img/mail.png"></a>
-                                <a href="#"><img src="./img/resume.png"></a>
+                                <a href="./assets/resume.pdf"><img src="./img/resume.png"></a>
                             </div>
                         </div>
                     </div>
@@ -31,29 +35,28 @@
             </div>
         </div>
 
-        <div class="jumbotron about-me">
+        <div class="jumbotron" id="postload">
             <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-sm-12 col-md-3">
-                        About Me 
+                <div class="row justify-content-start">
+                    <div class="col-sm-12 col-md-4">
+                        <h1>About Me</h1>
                     </div>
                 </div>
 
-                <div class="row justify-content-between">
-                    <div class="col-sm-12 col-md-3 intro">
+                <div class="row justify-content-between intro">
+                    <div class="col-sm-12 col-md-4">
                         <img src="./img/me.jpg">
                     </div>
-                    <div class="col-sm-12 col-md-3 projects">
+                    <div class="col-sm-12 col-md-8 description">
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Hi, I'm Peiyao, curious problem solver and coffee addict. Currently, I'm entering my 2B term in Computer Engineering at the University of Waterloo. When I'm not in school, you can probably find me working on my latest project here or catching up with friends here.
+                            Interest of late: iOS Development.
+
+                            Interested in knowing more? Let's get in touch! I promise I'm friendly.
                         </p>
-                    </div>
-                    <div class="col-sm-12 col-md-3 work">
-                        hello
                     </div>
                 </div>
             </div>
         </div>
-
     </body>
 </html>
