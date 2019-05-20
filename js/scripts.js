@@ -1,6 +1,6 @@
 var typeWrite = function(text, element, speed) {
 	const letter = text.charAt(0);
-	element.innerHTML += letter	
+	element.innerHTML += letter;
 	if (text.length == 1) {
 		return
 	} else {
