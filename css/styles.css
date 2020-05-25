@@ -46,7 +46,7 @@
 }
 
 .landing {
-	display: none;
+	visibility: hidden;
 	padding: 0 0 0 0;
 	background-attachment: fixed;
 	background-image: url("../img/landing.jpg");
