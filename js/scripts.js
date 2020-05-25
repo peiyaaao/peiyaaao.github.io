@@ -43,12 +43,15 @@ var launchScreen = function() {
 	var preloadScreen = document.getElementById("preload");
 	if (preloadScreen.style.display != "none") {
 		preloadScreen.style.display = "none";
+		document.getElementById("landing").style.display ="block";
 		document.getElementById("postload").style.display = "flex";
 		typeHeader()
 	}
 };
 
 var loadingAnimation = function() {
+	var preloadScreen = document.getElementById("preload");
+	preloadScreen.style.display = "block";
 	var circle = document.getElementById("loader");
 	var colours = ["#ffaa77", "#ef9689", "#df97a0", "#cfa2b3", "#bfaab7"];
 	growCircle(40, 0, colours, circle);
