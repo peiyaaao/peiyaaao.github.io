@@ -43,7 +43,6 @@ var launchScreen = function() {
 	var preloadScreen = document.getElementById("preload");
 	if (preloadScreen.style.display != "none") {
 		preloadScreen.style.display = "none";
-		document.getElementById("landing").style.visibility ="visible";
 		document.getElementById("postload").style.display = "flex";
 		typeHeader()
 	}
